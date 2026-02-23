@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 500px;
+    background-color: #4e4d4e;
+}
+
+.logo{
+    height: 100px;
+    width: 500px;
+    font-family: Tahoma;
+    font-weight: 300;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    color: white;
+    height: auto;
+    width: 400px;
+}
+
+.links{
+    display: flex;
+    gap: 100px;
+}
+
+.links a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: serif;
+    font-size: 24px;
+}
+
+main{
+    display: flex;
+    height: 900px;
+    width: 100%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.Login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container{
+    padding: 40px;
+    border: 1px solid;
+    width: 450px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.login-header img{
+    margin-bottom: 15px;
+}
+
+.login-header h1{
+    font-family: Tahoma;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.subtitle{
+    font-family: serif;
+    font-size: 18px;
+    color: #666;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-text{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.input-text label{
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #666;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    background-color: #f0f0f0;
+    padding: 0 5px;
+}
+
+.input-text input:focus + label,
+.input-text input:not(:placeholder-shown) + label{
+    top: 0;
+    font-size: 14px;
+    color: #4e4d4e;
+}
+
+form input[type="text"],
+form input[type="password"]{
+    height: 50px;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #d5ced8;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus{
+    outline: none;
+    border-color: #4e4d4e;
+}
+
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: serif;
+    font-size: 14px;
+}
+
+.remember{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.remember input[type="checkbox"]{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.forgot-link{
+    text-decoration: none;
+    color: #4e4d4e;
+    font-weight: 500;
+}
+
+.forgot-link:hover{
+    text-decoration: underline;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.btn button{
+    font-size: 18px;
+    font-weight: 600;
+    height: 50px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    background-color: #4e4d4e;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn button:hover{
+    background-color: #3a3a3a;
+    transform: scale(1.02);
+}
+
+.register-link{
+    text-align: center;
+    font-family: serif;
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.register-link a{
+    text-decoration: none;
+    color: #4e4d4e;
+    font-weight: 600;
+}
+
+.register-link a:hover{
+    text-decoration: underline;
+}

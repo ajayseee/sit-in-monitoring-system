@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Register.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>CCS Sit-in Monitoring System</title>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="logo">
+        <img
+          src="/images/uclogono.png"
+          class="img"
+          alt="uclogo"
+          height="60px"
+          width="60px"
+        />
+        <p class="title">CCS Sit-in Monitoring System</p>
+      </div>
+
+      <div class="links">
+        <a href="/index.html">Home</a>
+        <a href="">Community</a>
+        <a href="">About</a>
+        <a href="/Login.html">Login</a>
+        <a href="/Register.html">Register</a>
+      </div>
+    </div>
+
+    <main>
+      <section class="Register animate__animated animate__fadeInUp">
+        <div class="container-left">
+          <h1>Create Your Account</h1>
+          <form action="">
+            <div class="input-text">
+              <input type="text" id="number" />
+              <label for="idnumber">ID Number</label>
+            </div>
+
+            <div class="input-text">
+              <input type="text" id="lastname" />
+              <label for="lastname">Last Name</label>
+            </div>
+
+            <div class="input-text">
+              <input type="text" id="firstname" />
+              <label for="firstname">First Name</label>
+            </div>
+
+            <div class="input-text">
+              <input type="middlename" id="middlename" />
+              <label for="middlename">Middle Name</label>
+            </div>
+
+            <div class="input-text">
+              <select id="courselevel" required>
+                <option value="" disabled selected>Select Course Level</option>
+                <option value="1st Year">1st Year</option>
+                <option value="2nd Year">2nd Year</option>
+                <option value="3rd Year">3rd Year</option>
+                <option value="4th Year">4th Year</option>
+              </select>
+              <label for="courselevel">Course Level</label>
+            </div>
+          </form>
+        </div>
+
+        <div class="container-right">
+          <form action="" style="margin-top: 55px">
+            <div class="input-text">
+              <input type="text" id="course" />
+              <label for="course">Course</label>
+            </div>
+
+            <div class="input-text">
+              <input type="text" id="address" />
+              <label for="address">Address</label>
+            </div>
+
+            <div class="input-text">
+              <input type="text" id="email" />
+              <label for="email">Email</label>
+            </div>
+
+            <div class="input-text">
+              <input type="password" id="password" />
+              <label for="password">Password</label>
+            </div>
+
+            <div class="input-text">
+              <input type="password" id="password" />
+              <label for="password">Repeat Password</label>
+            </div>
+
+            <div class="btn">
+              <button type="button" onclick="window.location.href='/Login.html'">Register</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
